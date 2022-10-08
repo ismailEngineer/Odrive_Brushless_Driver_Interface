@@ -14,3 +14,8 @@ RUN apt update
 RUN apt-get install -y \ 
     python3
 
+
+WORKDIR /workspace/
+COPY ./ ./
+
+#CMD [ "python3 src/test_docker_sccript.py" ]
