@@ -18,4 +18,4 @@ RUN apt-get install -y \
 WORKDIR /workspace/
 COPY ./ ./
 
-#CMD [ "python3 src/test_docker_sccript.py" ]
+CMD [ "./src/test_docker_script.py" ]
