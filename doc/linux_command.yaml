@@ -1,0 +1,18 @@
+odrv0.config.dc_bus_overvoltage_trip_level = 25
+odrv0.config.dc_max_positive_current = 30
+odrv0.config.dc_max_negative_current = -1
+
+odrv0.axis0.motor.config.motor_type = MOTOR_TYPE_HIGH_CURRENT
+odrv0.axis0.motor.config.pole_pairs = 7
+odrv0.axis0.motor.config.torque_constant = 8.27 / 150
+odrv0.axis0.requested_state = AXIS_STATE_MOTOR_CALIBRATION
+# [wait for end of motor beep]
+odrv0.axis0.motor.config.pre_calibrated = True
+odrv0.save_configuration()
+
+odrv0.axis0.motor.config.current_lim = 10 
+
+
+odrv0.axis0.controller.config.vel_limit = 2 # [turn/s]
+
+
